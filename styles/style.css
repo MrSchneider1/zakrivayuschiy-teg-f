@@ -100,7 +100,7 @@
   bottom: -1px;
   width: 100%;
   height: 2px;
-  background-color: var(--accent-color); 
+  background-color: var(--accent-color);
   animation: zoom 0.5s ease forwards 1;
 }
 
@@ -256,27 +256,27 @@
 }
 
 .like-icon:hover .core {
-  fill: var(--accent-color); 
+  fill: var(--accent-color);
   transition: fill 0.3s;
 }
 
 .like-icon:hover .main-body {
-  fill: var(--accent-color); 
+  fill: var(--accent-color);
   transition: fill 0.3s 0.05s;
 }
 
 .like-icon:not(:hover) .core {
-  fill: var(--background-color); 
+  fill: var(--background-color);
   transition: fill 0.01s 0.03s;
 }
 
 .card__icon-button:active .core {
-  fill: red; 
+  fill: red;
   transition: fill 0.3s;
 }
 
 .card__icon-button:active .main-body {
-  fill: red; 
+  fill: red;
   transition: fill 0.3s 0.05s;
 }
 
@@ -325,7 +325,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--cover-color); 
+  background-color: var(--cover-color);
   animation: zoom 0.5s ease forwards 1;
 }
 
@@ -346,6 +346,7 @@
 .save-button {
   cursor: pointer;
   position: relative;
+  padding: 0;
 }
 
 .save-button:hover::before {
@@ -355,7 +356,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--cover-color); 
+  background-color: var(--cover-color);
   animation: zoom 0.5s ease forwards 1;
 }
 
@@ -367,12 +368,8 @@
 }
 
 .floppy {
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
   fill: var(--button-text-color);
-}
-
-.save-button {
-  padding: 0;
 }
 
 .save-button-wrapper {
@@ -380,16 +377,15 @@
   max-width: 335px;
 }
 
-.save-button-container {
+.save-button {
   width: 306px;
   height: 80px;
   border: 2px solid var(--accent-color, #00CC14);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  align-items: center;
   background-color: var(--background-color, #000000);
+}
+
+.save-button .button__text {
+  margin: 0 0 0 8px;
 }
 
 .popup {
@@ -460,15 +456,10 @@ dialog::backdrop {
     margin-block-end: 105px;
   }
   
-  .save-button-container {
+  .save-button {
     width: 335px;
     height: 51px;
     border: 2px solid var(--accent-color, #00CC14);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
   }
 
   .popup {
@@ -490,13 +481,10 @@ dialog::backdrop {
     --accent-color: #000;
     --button-text-color: #FFF;
     --cover-color: rgb(0, 0, 0);
-}
-
-  :root {
     --gradient: repeating-linear-gradient(to left, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(#d3d3d3 , #d3d3d3  2px, transparent 2px, transparent 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-  }
+}
 
 }
 
@@ -507,10 +495,7 @@ dialog::backdrop {
     --accent-color: #00CC14;
     --button-text-color: #00CC14;
     --cover-color: #00CC14;
-}
-
-:root {
-  --gradient: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px, transparent 4px),
+    --gradient: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(#000 , #000  2px, transparent 2px, transparent 4px),
     linear-gradient(#007f0c, #004306);
 }
