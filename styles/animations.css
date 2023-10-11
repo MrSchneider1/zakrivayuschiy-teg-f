@@ -12,3 +12,54 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes arrow {
+    0% {
+      left: -24px;
+    }
+  
+    50% {
+      left: -20px;
+    }
+  
+    100% {
+      left: -24px;
+    }
+  
+  }
+  
+  @keyframes focus {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes zoom {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes big {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  
+  @keyframes appear {
+    to {
+      fill: red;
+    }
+  }
