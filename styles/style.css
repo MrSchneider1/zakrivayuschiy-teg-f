@@ -33,7 +33,7 @@
   justify-content: center;
 }
 
-.header__title {
+.header__logo {
   font-family: var(--decoration-font, sans-serif);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   color: var(--accent-color);
@@ -46,12 +46,13 @@
   padding-block-end: 20px;
 }
 
-.header_subtitle {
+.header__title {
   font-family: var(--decoration-font, sans-serif);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   color: var(--accent-color);
   text-align: center;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .theme-menu__list {
@@ -128,7 +129,7 @@
 }
 
 .card__title {
-  font-weight: 785;
+  font-weight: var(--font-weight-title);
   padding: 4px 10px 6px;
   border-block-end: 2px solid var(--accent-color);
 }
@@ -224,7 +225,7 @@
 }
 
 .card-paragraph {
-  font-weight: 465;
+  font-weight: var(--font-weight-text);
   line-height: 21px;
 }
 

@@ -14,7 +14,8 @@
       linear-gradient(#007f0c, #004306);
     --button-text-color: #00CC14;
     --cover-color: #00CC14;
-
+    --font-weight-title: 785;
+    --font-weight-text: 465;
 }
 
 :root.theme-light {
@@ -26,6 +27,8 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --button-text-color: #FFF;
     --cover-color: rgb(0, 0, 0);
+    --font-weight-title: 700;
+    --font-weight-text: 400;
 }
 
 @media (width >= 696px) {
@@ -74,6 +77,8 @@
     --gradient: repeating-linear-gradient(to left, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(#d3d3d3 , #d3d3d3  2px, transparent 2px, transparent 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --font-weight-title: 700;
+    --font-weight-text: 400;
 }
 
 }
@@ -87,6 +92,8 @@
     --gradient: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(#000 , #000  2px, transparent 2px, transparent 4px),
     linear-gradient(#007f0c, #004306);
+    --font-weight-title: 785;
+    --font-weight-text: 465;
 }
 
 }

@@ -3,6 +3,8 @@
 :root {
     --decoration-font: 'PressStart2P-Regular';
     --main-font: 'Inter';
+    --font-weight-title: 785;
+    --font-weight-text: 465;
     --background-color: #000;
     --accent-color: #00CC14;
     --gradient: repeating-linear-gradient(to left, #000, #000 2px, rgb(0, 0, 0, 0) 2px, rgb(0, 0, 0, 0) 4px),
