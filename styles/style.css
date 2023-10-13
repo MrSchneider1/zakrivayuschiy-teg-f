@@ -437,3 +437,40 @@
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
+
+@media (width >= 696px) {
+  .header__card {
+    width: 696px;
+    margin: 102px auto 104px;
+  }
+
+  .picture__corner-decor {
+    top: 25px;
+    right: 25px;
+  }
+
+  .card {
+    width: 696px;
+  }
+
+  .save-button-wrapper {
+    margin-block-end: 105px;
+  }
+  
+  .save-button {
+    width: 335px;
+    height: 51px;
+    border: 2px solid var(--accent-color, #00CC14);
+  }
+
+  .popup {
+    inline-size: 357px;
+    block-size: 193px;
+  }
+
+  .popup__close-button {
+    min-inline-size: 293px;
+    min-block-size: 38px;
+  }
+
+}

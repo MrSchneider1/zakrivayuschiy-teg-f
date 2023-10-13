@@ -31,43 +31,6 @@
     --font-weight-text: 400;
 }
 
-@media (width >= 696px) {
-  .header__card {
-    width: 696px;
-    margin: 102px auto 104px;
-  }
-
-  .picture__corner-decor {
-    top: 25px;
-    right: 25px;
-  }
-
-  .card {
-    width: 696px;
-  }
-
-  .save-button-wrapper {
-    margin-block-end: 105px;
-  }
-  
-  .save-button {
-    width: 335px;
-    height: 51px;
-    border: 2px solid var(--accent-color, #00CC14);
-  }
-
-  .popup {
-    inline-size: 357px;
-    block-size: 193px;
-  }
-
-  .popup__close-button {
-    min-inline-size: 293px;
-    min-block-size: 38px;
-  }
-
-}
-
 @media (prefers-color-scheme: light) {
   
   :root {
@@ -79,21 +42,6 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --font-weight-title: 700;
     --font-weight-text: 400;
-}
-
-}
-
-@media (prefers-color-scheme: dark) {
-  
-  :root {
-    --background-color: #000;
-    --accent-color: #00CC14;
-    --button-text-color: #00CC14;
-    --gradient: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px, transparent 4px),
-    repeating-linear-gradient(#000 , #000  2px, transparent 2px, transparent 4px),
-    linear-gradient(#007f0c, #004306);
-    --font-weight-title: 785;
-    --font-weight-text: 465;
 }
 
 }
